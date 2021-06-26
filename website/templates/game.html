@@ -2,5 +2,7 @@
 
 {% block title %}Game{% endblock %}
 {% block content %}
-    <p>Game Code: {{game_id}}</p>
+    <div id="log"></div>
+    <div id='game_id' style="display: none;">{{game_id}}</div>
+    <script src="{{ url_for('static', filename='js/game.js') }}" defer></script>
 {% endblock %}
